@@ -11,4 +11,4 @@ Opcja instrukcja wyświetla instrukcję, która i tak jest pokazywana na samym p
 
 Opcja wyjście umożliwia zakończenie działania programu.
 
-Błędy z którymi się pojawiły, ale zostały rozwiązane: wpisywanie typu char powodowało zapętlenie się programu, po usuwaniu liczb z planszy nie dało się wygrać gry, generowanie planszy, żeby była czytelna, komunikaty ostrzegające przed potencjalnie niebezpiecznymi funkcjami.
+Błędy które się pojawiły, ale zostały rozwiązane: wpisywanie typu char powodowało zapętlenie się programu, po usuwaniu liczb z planszy nie dało się wygrać gry, generowanie planszy, żeby była czytelna, komunikaty ostrzegające przed potencjalnie niebezpiecznymi funkcjami.
