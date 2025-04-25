@@ -1,4 +1,4 @@
-#define  _CRT_SECURE_NO_WARNINGS
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
@@ -360,7 +360,7 @@ void load_game_from_file(const char* filename) {
 		return;
 	}
 
-	while (fscanf(file, "%d %d", &size, &block_size) != 2) {
+	while (fscanf_s(file, "%d %d", &size, &block_size) != 2) {
 		while (getchar() != '\n');
 		printf("Niepoprawna wartosc w pliku. Sprobuj ponownie.\n");
 	}
@@ -373,7 +373,7 @@ void load_game_from_file(const char* filename) {
 
 	for (int i = 0; i < size; i++) {
 		for (int j = 0; j < size; j++) {
-			while (fscanf(file, "%d", &board[i][j]) != 1) {
+			while (fscanf_s(file, "%d", &board[i][j]) != 1) {
 				while (getchar() != '\n');
 				printf("Niepoprawna wartosc w pliku w pozycji [%d][%d]. Sprobuj ponownie.\n", i, j);
 			}
@@ -382,7 +382,7 @@ void load_game_from_file(const char* filename) {
 
 	for (int i = 0; i < size; i++) {
 		for (int j = 0; j < size; j++) {
-			while (fscanf(file, "%d", &solution_board[i][j]) != 1) {
+			while (fscanf_s(file, "%d", &solution_board[i][j]) != 1) {
 				while (getchar() != '\n');
 				printf("Niepoprawna wartosc w pliku w pozycji [%d][%d] dla rozwiazania. Sprobuj ponownie.\n", i, j);
 			}
